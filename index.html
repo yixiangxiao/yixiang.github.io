@@ -1275,8 +1275,8 @@
           
             <h1 id="一、关于运动"><a href="#一、关于运动" class="headerlink" title="一、关于运动"></a>一、关于运动</h1><p>页面加载完成后，通过Javascript操作DOM元素，使其样式动态变更。接下来 通过定时器反复执行产生连续的动画 进而起到运动的效果！常见的DOM样式操控有：<br>top、left、width、height、opacity….等一些可以量化的属性(px，数值)。</p>
 <h2 id="1．定时器的使用"><a href="#1．定时器的使用" class="headerlink" title="1．定时器的使用"></a>1．定时器的使用</h2><h3 id="1-setInterval间歇执行"><a href="#1-setInterval间歇执行" class="headerlink" title="1.setInterval间歇执行"></a>1.setInterval间歇执行</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @param $&#123;code&#125;    要执行的代码 一段可执行的代码字符串</span></span><br><span class="line"><span class="comment"> * @param $&#123;time&#125;    每帧动画的时间间隔</span></span><br><span class="line"><span class="comment"> * @return int       定时器的编号，标识符</span></span><br><span class="line"><span class="comment"> */</span> </span><br><span class="line"><span class="built_in">setInterval</span>(code, time);</span><br><span class="line">当执行代码较多时 可以放入一个函数中，定时器执行时回调该函数。任务处理函数中的<span class="built_in">this</span>指向<span class="built_in">window</span>，这并没有什么惊奇的。需要特别注意的是 当引用了一个第三方的函数或者方法时 如果需要使用<span class="built_in">this</span> 那么结果可能会有所不同 需要重新绑定<span class="built_in">this</span>。</span><br></pre></td></tr></table></figure>
-<p><img src="/yixiangxiao.github.io/2022/09/10/js(11)/1.png" alt="1"><br>绑定this可以有以下几种方式：</p>
-<h4 id="1-给方法外部包裹函数"><a href="#1-给方法外部包裹函数" class="headerlink" title="1.给方法外部包裹函数"></a>1.给方法外部包裹函数</h4><h4 id="2-使用bind硬绑定"><a href="#2-使用bind硬绑定" class="headerlink" title="2.使用bind硬绑定"></a>2.使用bind硬绑定</h4><p><img src="/yixiangxiao.github.io/2022/09/10/js(11)/2.png" alt="2"><br>最后，定时任务 通常有执行的临界条件，当到达临界条件时 需要使用clearInterval(定时器编号)取消某个定时器：<br><img src="/yixiangxiao.github.io/2022/09/10/js(11)/3.png" alt="3"></p>
+<p><img src="https://yixiangxiao.github.io/2022/09/10/js(11)/1.png" alt="1"><br>绑定this可以有以下几种方式：</p>
+<h4 id="1-给方法外部包裹函数"><a href="#1-给方法外部包裹函数" class="headerlink" title="1.给方法外部包裹函数"></a>1.给方法外部包裹函数</h4><h4 id="2-使用bind硬绑定"><a href="#2-使用bind硬绑定" class="headerlink" title="2.使用bind硬绑定"></a>2.使用bind硬绑定</h4><p><img src="https://yixiangxiao.github.io/2022/09/10/js(11)/2.png" alt="2"><br>最后，定时任务 通常有执行的临界条件，当到达临界条件时 需要使用clearInterval(定时器编号)取消某个定时器：<br><img src="https://yixiangxiao.github.io/2022/09/10/js(11)/3.png" alt="3"></p>
               
                   
 
@@ -1518,11 +1518,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
